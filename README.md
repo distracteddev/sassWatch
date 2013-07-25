@@ -23,6 +23,7 @@ grunt.loadNpmTasks('grunt-bower-requirejs');
 
 ## Example usage
 
+```js
 // Assumes the styles (css and scss) directory is located at 'app/styles'.
 grunt.loadNpmTasks('grunt-sassWatch');
 
@@ -31,7 +32,6 @@ grunt.loadNpmTasks('grunt-sassWatch:my_cool_styles');
 
 grunt.registerTask('default', ['sassWatch']);
 ```
-
 
 ## Why did I do this when grunt-contrib-sass and grunt-contrib-compass already exist?
 Because neither of those solutions are fast enough to be used easily in a livereload enabled environment. The problem both libraries had was that they relied on grunt-watch, which meant that they were launching the sass (ruby) environment + vm each time a scss file needs to be compiled. Furthermore, since the files are not being watched by sass itself, the tasks end up recompiling every sass file instead of only the ones that changed.
