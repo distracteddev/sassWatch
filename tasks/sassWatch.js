@@ -19,7 +19,8 @@ module.exports = function (grunt) {
       var args = [
         "sass",
         "--compass",
-        "--watch"
+        "--watch",
+        ".:."
       ];
 
       // get target styles folder path
@@ -45,7 +46,7 @@ module.exports = function (grunt) {
         // noop just to keep logs clear of "undefined is not a function" message
       });
 
-      // pipe child process's output to grunt
+      // pipe child process's error output to grunt
       child.stdout.pipe(process.stdout);
       child.stderr.pipe(process.stderr);
       return true;
