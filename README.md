@@ -1,7 +1,6 @@
 # grunt-sassWatch
 
-Automagically wire-up installed Bower components into your RequireJS config
-
+Spawns ```sass --watch --compass``` in a specified folder. This is much faster then spawning a new instance of sass everytime a watch-hook is triggered. 
 
 ## Getting Started
 
@@ -38,8 +37,8 @@ Because neither of those solutions are fast enough to be used easily in a livere
 
 I was able to reduce my sass compile time from 6+ seconds to under 0.5 seconds by doing two things:
 
-	1. Splitting my scss files in two: 
-		* vendor.scss - has all my @import statements for Bootstrap and FlatUI
-		* main.scss   - app specific css rules
-	2. Using grunt-sassWatch
+1. Splitting my scss files in two: 
+	* vendor.scss - has all my @import statements for Bootstrap and FlatUI
+	* main.scss   - app specific css rules
+2. Using grunt-sassWatch
 
