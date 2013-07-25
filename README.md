@@ -13,7 +13,7 @@ npm install grunt-sassWatch --save-dev
 Once the plugin has been installed, it may be enabled inside your Gruntfile with this line of JavaScript:
 
 ```js
-grunt.loadNpmTasks('grunt-bower-requirejs');
+grunt.loadNpmTasks('grunt-sassWatch');
 ```
 
 [grunt]: http://gruntjs.com
