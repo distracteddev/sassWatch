@@ -37,7 +37,7 @@ Because neither of those solutions are fast enough to be used easily in a livere
 
 I was able to reduce my sass compile time from 6+ seconds to under 0.5 seconds by doing two things:
 
-1. Splitting my scss files in two: 
+1. Splitting my main.scss file into two: 
 	* vendor.scss - has all my @import statements for Bootstrap and FlatUI
 	* main.scss   - app specific css rules
 2. Using grunt-sassWatch
