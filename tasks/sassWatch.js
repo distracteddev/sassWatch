@@ -11,8 +11,6 @@
 module.exports = function (grunt) {
   // Quick and dirty grunt task to spawn sass --watch when starting the dev server
   grunt.registerTask('sassWatch', 'Custom Sass Task', function(folderPath) {
-    return sassWatch(folderPath);
-
     function sassWatch(relativePath) {
 
       // command line args
@@ -51,5 +49,7 @@ module.exports = function (grunt) {
       child.stderr.pipe(process.stderr);
       return true;
     }
+    
+    return sassWatch(folderPath);
   });
 }
